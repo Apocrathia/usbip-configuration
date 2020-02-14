@@ -1,5 +1,9 @@
 #! /bin/bash
 
+/usr/bin/apt-get install linux-tools-generic -y
+/sbin/modprobe vhci-hcd
+/bin/echo 'vhci-hcd' >> /etc/modules
+
 # Copy the systemd unit file
 /bin/cp ./zigbee-client.service /etc/systemd/system/
 /bin/cp ./zwave-client.service /etc/systemd/system/

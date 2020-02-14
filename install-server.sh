@@ -1,5 +1,9 @@
 #! /bin/bash
 
+/usr/bin/apt-get install usbip
+/sbin/modprobe usbip_host
+/bin/echo 'usbip_host' >> /etc/modules
+
 # Copy the systemd unit file
 /bin/cp ./zigbee-server.service /etc/systemd/system/
 /bin/cp ./zwave-server.service /etc/systemd/system/
