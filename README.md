@@ -17,3 +17,5 @@ For more information on my implementation of this, please refer to my [Home Assi
 - https://github.com/solarkennedy/wiki.xkyle.com/wiki/USB-over-IP-On-Ubuntu
 - https://blog.toonormal.com/2016/09/25/notes-usbip/
 - https://github.com/raspberrypi/linux/issues/3027
+- https://www.raspberrypi.org/forums/viewtopic.php?f=28&t=245031
+- https://gist.github.com/shbatm/1526174a9d285c342eb05c9efa35c02d
