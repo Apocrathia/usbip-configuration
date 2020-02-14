@@ -1,5 +1,5 @@
 [Unit]
-Description=Z-Wave Client
+Description=USBIP Client
 After=network.target
 
 [Service]
