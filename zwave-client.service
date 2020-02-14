@@ -5,7 +5,7 @@ After=network.target
 [Service]
 Type=oneshot
 RemainAfterExit=yes
-ExecStart=/bin/sh -c "/usr/lib/linux-tools/$(uname -r)/usbip attach -r usb.apocrathia.com -b $(/usr/lib/linux-tools/$(uname -r)/usbip list -r usb.apocrathia.com | grep '$DEVICE_ID' | cut -d: -f1)"
+ExecStart=/bin/sh -c "/usr/lib/linux-tools/$(uname -r)/usbip attach -r usb.apocrathia.com -b $(/usr/lib/linux-tools/$(uname -r)/usbip list -r usb.apocrathia.com | grep '2109:3431' | cut -d: -f1)"
 ExecStop=/bin/sh -c "/usr/lib/linux-tools/$(uname -r)/usbip detach --port=$(/usr/lib/linux-tools/$(uname -r)/usbip port | grep '<Port in Use>' | sed -E 's/^Port ([0-9][0-9]).*/\\1/')"
 
 [Install]
