@@ -1,3 +1,10 @@
+# **Warning**
+
+This repository has been archived, and I've elected to use [Lukas Hetzenecker's home-assistant-remote custom_component](https://github.com/lukas-hetzenecker/home-assistant-remote). The Remote-HA component provides a much more resilient solution, as I was experiencing frequent disconnects using the uspip method. Additionally, this means I can continue to use HA OS on both my production and remote instance, which is a lot easier to maintain (and less of a security concern) than a full Ubuntu/Debian system due to how stripped down the OS is.
+You can see my configuration of this component [in my config repo](https://github.com/Apocrathia/home-assistant-config/blob/master/packages/custom/remote_homeassistant.yaml)
+
+---
+
 # usbip-configuration
 Systemd service definition files for passing Zigbee & Z-Wave devices to Home Assistant
 
